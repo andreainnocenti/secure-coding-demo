@@ -1,3 +1,24 @@
 # GitSecure Simple Web Application
 One always need a simple app. Always !! !   
 !
+
+
+### To get started, click this button:
+[![Create toolchain](https://cloud.ibm.com/devops/graphics/create_toolchain_button.png)](https://cloud.ibm.com/devops/setup/deploy?repository=https%3A%2F%2Fgithub.com%2Fandreainnocenti%2Fsecure-coding-demo&env_id=ibm:yp:us-south)
+
+It implements the following best practices:
+- sanity check the Dockerfile prior to attempting creating the image,
+- build container image on every Git commit, setting a tag based on build number, timestamp and commit id for traceability
+- use a private image registry to store the built image, automatically configure access permissions for target cluster deployment using API tokens than can be revoked,
+- check container image for security vulnerabilities,
+- insert the built image tag into the deployment manifest automatically,
+- use an explicit namespace in cluster to insulate each deployment (and make it easy to clear, by "kubectl delete namespace"),
+
+---
+### Learn more 
+
+* Blog [Continuously deliver your app to Kubernetes with Bluemix](https://www.ibm.com/blogs/cloud-archive/2017/07/continuously-deliver-your-app-to-kubernetes-with-bluemix/)
+* Step by step [tutorial](https://www.ibm.com/cloud/architecture/tutorials/use-develop-kubernetes-app-toolchain)
+* [Getting started with clusters](https://cloud.ibm.com/docs/containers?topic=containers-getting-started)
+* [Getting started with toolchains](https://cloud.ibm.com/devops/getting-started)
+* [Documentation](https://cloud.ibm.com/docs/services/ContinuousDelivery?topic=ContinuousDelivery-getting-started&pos=2)
