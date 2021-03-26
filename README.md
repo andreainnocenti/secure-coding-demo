@@ -1,6 +1,5 @@
-# GitSecure Simple Web Application
-One always need a simple app. Always !! !   
-!
+# Secure Coding Demo
+Simple "Hello World" application to demostrate how a DevSecOps approach can help to discover security issues.
 
 
 ### To get started, click this button:
